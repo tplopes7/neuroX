@@ -10,7 +10,15 @@
     <div class="container">
     <h1>Neuro X</h1>
         <p>Em dia com sua saúde mental!</p>
-        <div class="saudacao">Olá, vistante!</div>
+        <div class="saudacao" id="mensagemSaudacao">Olá, vistante!</div>
+        <button onclick="mudarNome()">Personalizar saudação</button>
     </div>
+
+    <script>
+        function mudarNome(){
+            let nome = "Thaís"
+        document.getElementById("mensagemSaudacao").textContent = "Olá" + nome
+        }
+    </script>
 </body>
 </html>
